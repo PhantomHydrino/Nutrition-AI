@@ -366,4 +366,4 @@ This project is licensed under the MIT License.
 
 # 👨‍💻 Author
 
-Built with React, TypeScript, and ❤️ for AI-powered nutrition tracking.
+Built with React, TypeScript, and ❤️ for AI-powered nutrition tracking, by [PhantomHydrino](https://github.com/PahntomHydrino/)
