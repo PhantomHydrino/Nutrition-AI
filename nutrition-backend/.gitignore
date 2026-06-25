@@ -1,0 +1,99 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Build directories
+bin/
+build/
+dist/
+
+# Go workspace
+go.work
+go.work.sum
+
+# Dependency directories (rarely used with Go modules)
+vendor/
+
+# Coverage reports
+coverage.out
+coverage.html
+*.coverprofile
+
+# GoLand / IntelliJ
+.idea/
+
+# VS Code
+.vscode/
+
+# Vim
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Secrets
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+
+# Air (Live Reload)
+.air.toml
+tmp/
+
+# Delve debugger
+__debug_bin
+
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated files
+*.gen.go
+
+# Test cache
+.cache/
+
+# Docker overrides
+docker-compose.override.yml
+
+# Kubernetes secrets/configs
+secrets.yaml
+secret.yaml
+
+# Local application data
+data/
+uploads/
+
+# OS generated files
+ehthumbs.db
