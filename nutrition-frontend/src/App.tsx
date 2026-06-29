@@ -12,6 +12,9 @@ import RegisterPage from './pages/RegisterPage';
 import { AuthProvider } from './contexts/AuthContext';
 import NotFoundPage from './pages/NotFoundPage';
 import ProtectedRoute from './components/ProtectedRoute';
+import HealthDashboard from './pages/HealthDashboard';
+import HealthProfileSetupPage from './pages/HealthProfileSetupPage';
+
 
 const App: React.FC = () => {
   return (
@@ -52,6 +55,18 @@ const App: React.FC = () => {
             <Route path="/weekly" element={
               <ProtectedRoute>
                 <WeeklyAnalyticsPage />
+              </ProtectedRoute>
+            } />
+
+            <Route path="/health" element={
+              <ProtectedRoute>
+                <HealthDashboard />
+              </ProtectedRoute>
+            } />
+
+            <Route path="/health-profile" element={
+              <ProtectedRoute>
+                <HealthProfileSetupPage />
               </ProtectedRoute>
             } />
             

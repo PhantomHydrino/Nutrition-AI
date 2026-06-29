@@ -5,7 +5,6 @@ import (
 	"nutrition-backend/db"
 	"nutrition-backend/models"
 	"nutrition-backend/routes"
-
 	"time"
 
 	"github.com/gin-contrib/cors"
@@ -14,7 +13,7 @@ import (
 )
 
 func main() {
-	_ = godotenv.Load() // or godotenv.Load(".env")
+	_ = godotenv.Load()
 
 	router := gin.Default()
 
@@ -41,11 +40,12 @@ func main() {
 		log.Fatal("DB connection failed:", err)
 	}
 
-	// 2. Auto-create tables
+	// 2. Auto-create / migrate tables
 	db.DB.AutoMigrate(
 		&models.User{},
 		&models.FoodLog{},
 		&models.AICache{},
+		&models.UserProfile{}, // ← new: required for health features
 	)
 
 	// 3. Register routes

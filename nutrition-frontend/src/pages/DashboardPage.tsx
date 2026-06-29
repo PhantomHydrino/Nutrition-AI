@@ -32,8 +32,6 @@ const DashboardPage: React.FC = () => {
     loadDashboardData()
   }, []);
 
-  console.log(daily)
-
   return (
     <div className="dashboard-grid">
       <Card title="Today" subtitle="Calorie intake for today">

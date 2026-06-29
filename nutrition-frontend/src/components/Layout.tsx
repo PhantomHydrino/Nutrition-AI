@@ -40,6 +40,10 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
               Weekly Analytics
             </Link>
 
+            <Link to="/health" onClick={() => setMenuOpen(false)}>
+              Health Dashboard
+            </Link>
+
             
           </nav>
 
